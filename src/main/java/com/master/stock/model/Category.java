@@ -1,5 +1,6 @@
 package com.master.stock.model;
 
+import com.master.stock.dto.CategoryRegisterDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,5 +20,9 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank
-    private String category;
+    private String name;
+
+    public Category(CategoryRegisterDTO dto) {
+        this.name = dto.name();
+    }
 }
