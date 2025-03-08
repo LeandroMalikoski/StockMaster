@@ -31,11 +31,11 @@ public class Product {
     private Integer stock;
 
     @ManyToOne
-    @JoinColumn(name = "category_id")
+    @JoinColumn(name = "category")
     private Category category;
 
     @ManyToOne
-    @JoinColumn(name = "supplier_id")
+    @JoinColumn(name = "supplier")
     private Supplier supplier;
 
     private LocalDateTime dateCreated = LocalDateTime.now();
