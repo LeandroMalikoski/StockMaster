@@ -20,18 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class MainController {
+public class CategoryController {
 
     private final CategoryService categoryService;
 
-    private final ProductService productService;
-
-    private final SupplierService supplierService;
-
-    public MainController(CategoryService categoryService, ProductService productService, SupplierService supplierService, CategoryRepository categoryRepository, ProductRepository productRepository, SupplierRepository supplierRepository) {
+    public CategoryController(CategoryService categoryService, ProductService productService, SupplierService supplierService, CategoryRepository categoryRepository, ProductRepository productRepository, SupplierRepository supplierRepository) {
         this.categoryService = categoryService;
-        this.productService = productService;
-        this.supplierService = supplierService;
     }
 
     @PostMapping("category")
