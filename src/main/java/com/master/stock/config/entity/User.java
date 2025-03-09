@@ -1,5 +1,6 @@
-package com.master.stock.model;
+package com.master.stock.config.entity;
 
+import com.master.stock.config.enums.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

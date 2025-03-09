@@ -1,4 +1,4 @@
-package com.master.stock.model;
+package com.master.stock.entity;
 
 import com.master.stock.dto.CategoryRegisterDTO;
 import jakarta.persistence.Entity;

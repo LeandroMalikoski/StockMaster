@@ -1,4 +1,4 @@
-package com.master.stock.model;
+package com.master.stock.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
